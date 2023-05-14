@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moja Strona WWW</title>
+    <style>
+        /* style dla sekcji 1 */
+        
+        section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        /* style dla przycisku */
+        
+        .cta {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        /* style dla sekcji 2 */
+        
+        .products {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ddd;
+        }
+        /* style dla sekcji 3 */
+        
+        .video {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        /* style dla sekcji 4 */
+        
+        .form {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ddd;
+        }
+        /* style dla inputów formularza */
+        
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        /* style dla przycisku formularza */
+        
+        .submit {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- sekcja 1 -->
+    <section>
+        <h1>Tytuł strony</h1>
+        <p>Krótki tekst (tzw. Lead) opisujący temat strony.</p>
+        <a href="#products" class="cta">Zobacz więcej</a>
+    </section>
+    <!-- sekcja 2 -->
+    <section id="products" class="products">
+        <h2>Prezentacja produktów</h2>
+        <div>
+            <h3>Produkt 1</h3>
+            <p>Krótki opis produktu 1.</p>
+            <a href="https://party.pl/newsy/bbc-wysmialo-wystep-blanki-na-eurowizji-mieli-zaskakujacy-zarzut-wobec-reprezentacji-polski-153299-r1/" target="_blank">Szczegóły</a>
+        </div>
+        <div>
+            <h3>Produkt 2</h3>
+            <p>Krótki opis produktu 2.</p>
+            <a href="https://www.eska.pl/news/blanka-komentuje-swoj-sukces-na-eurowizji-2023-zwrocila-sie-do-fanow-aa-jqyP-FJeT-qs6Q.html" target="_blank">Szczegóły</a>
+        </div>
+    </section>
+    <!-- sekcja 3 -->
+    <section class="video">
+        <h1>Zalety produktu</h1>
+        <iframe width="560" class="video" height="315" src="https://www.youtube.com/embed/075F41yFvqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="form-section">
+        <h2>Skontaktuj się z nami</h2>
+        <form>
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Treść wiadomości:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Wyślij" id="submit">
+        </form>
+    </section>
+</body>
